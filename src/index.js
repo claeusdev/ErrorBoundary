@@ -8,6 +8,10 @@ const links = [
     title: "first react component"
   }
 ];
+
+const Welcome = () => {
+  throw new Error();
+};
 class ErrorBoundary extends Component {
   state = {
     error: null
@@ -39,8 +43,7 @@ class App extends Component {
     return (
       <div className="App">
         <ErrorBoundary>
-          <h1>Hello CodeSandbox</h1>
-          <h2>Start editing to see some magic hey!</h2>
+          <Welcome />
         </ErrorBoundary>
       </div>
     );
